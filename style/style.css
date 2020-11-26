@@ -9,18 +9,20 @@ body {
 	display:none;
 }
 #icone {
+	right:30px;
 	cursor:pointer;
 	padding:15px;
 	position:absolute;
 	z-index:1;
+	transition: .2s;
 }
 .container{
 	background-color:#333;
 	height:100%;
 	width:300px;
-	position:absolute;
+	position:fixed;
 	transition: all .2s linear;
-	left:-300px;
+	right:-300px;
 }
 nav{
 	width:100%;
@@ -45,10 +47,18 @@ nav a {
 	background-color:#050542;
 }
 #check:checked ~ .container{
-	transform:translateX(300px);
+	transform:translateX(-300px);
 }
 #check:checked ~ .container nav a .link{
 	opacity:1;
 	margin-top: 0;
 	transition-delay: .2s;
+}
+#check:checked ~ label#icone {
+	transform:translate(-200px);
+}
+@media only screen and (min-width: 1000px) {
+  #icone {
+    display:none;
+  }
 }
