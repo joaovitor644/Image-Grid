@@ -62,21 +62,24 @@ nav#nav2  h1{
 	color:white;
 }
 .image-group{
+	display:flex;
+	flex-direction:wrap;
 	max-width:25%;
-	flex:25%;
+	flex-wrap:wrap;
     padding:0 4px;
 }
 .grid-container .image-group img{
+	display:flex;
+	flex-direction:row;
 	width:100%;
 	vertical-align:middle;
 	margin-top:8px;
 }
 .grid-container{
-	width:100%;
-	display: -ms-flexbox; 
+	width:90%;
+	margin-left:30px;
+	flex-wrap:wrap; 
 	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
 }
 .link{
 	background-color:#494950;
@@ -120,6 +123,8 @@ nav#nav2  h1{
   #icone {
     display:none;
   }
-
+	.image-group{
+		left:100px;
+	}
 
 }
