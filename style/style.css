@@ -6,7 +6,7 @@
 body {
 	
 	width:100%;
-	background-color:#f9f9f9f;
+	background-color:#f9f9f9;
 }
 #check{
 	display:none;
@@ -87,6 +87,7 @@ nav#nav2  h1{
 	flex-direction:wrap;
 	max-width:25%;
 	flex-wrap:wrap;
+	
     padding:0 4px;
 }
 .grid-container .image-group img{
@@ -101,7 +102,8 @@ nav#nav2  h1{
 	margin-top:50px;
 	align-items: center;
 	justify-content: center;
-	flex-wrap:wrap; 
+	flex-wrap:nowrap;
+
 	display: flex;
 	margin-bottom:50px;
 	margin: auto;
@@ -128,6 +130,28 @@ nav#nav2  h1{
 	opacity:1;
 	margin-top: 0;
 	transition-delay: .2s;
+}
+.content{
+	width: 550px;
+	height: auto;
+	background-color: blanchedalmond;
+	margin: auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+.content img{
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 footer{
 	margin-top: 50px;
