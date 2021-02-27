@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href=../style/style.css>
+		<title>Image grid</title>
+	</head>
+	<body>
+		<nav id="nav2">
+			<h1>Logo</h1>
+			<ul>
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="#">Contact Us</a></li>
+			   <li><a href="about.html">About</a></li>
+			   <li><a href="#">Upload Your Photos</a></li>
+			   <li><a href="#">Support</a></li>
+			</ul>
+		</nav>
+		<input type="checkbox" id="check">
+		<label id="icone" for="check"><img src='../style/img/icone.png'></label>
+		<div class="container">
+			<nav id="nav1">
+				<a href="#"><div class="link">Home</div></a>
+				<a href="#"><div class="link">Contact Us</div></a>
+				<a href="#"><div class="link">About</div></a>
+				<a href="#"><div class="link">Upload Your Photos</div></a>
+				<a href="#"><div class="link">Support</div></a>
+			</nav>
+		</div>
+		<div id="banner">
+			<h1>Logo</h1>	
+		</div>
+		<div>
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="fileToUpload" >
+				<input type="submit" value="enviar" name="submit">
+			</form>
+		</div>
+		<footer>
+			<div id="icons">
+				<img src='../style/icons/facebook.ico'>
+				<img src='../style/icons/twitter.ico'>
+				<img src='../style/icons/printerest.ico'>
+				<img src='../style/icons/linkedin.ico'>
+				<img src='../style/icons/github.ico'>
+			</div>
+			<ul id="menu-container">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Upload Your Photos</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
